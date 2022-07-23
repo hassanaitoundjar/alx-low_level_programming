@@ -1,24 +1,17 @@
 #include "main.h"
 
 /**
- * _strcpy - copies a string from one pointer to another
+ * _abs - computes the absolute value of an integer
  *
- * @src: source of string
- * @dest: destination
+ * @n: takes an int input for function
  *
- * Return: pointer to dest input parameter
+ * Return: Absolute n
 */
 
-char *_strcpy(char *dest, char *src)
+int _abs(int n)
 {
-	int a, b = 0;
+	if (n <= 0)
+		n = (-1) * n;
 
-	for (a = 0; src[a] != '\0'; ++a)
-	{
-		dest[b] = src[a];
-		++b;
-	}
-	dest[b] = '\0';
-
-	return (dest);
+	return (n);
 }
